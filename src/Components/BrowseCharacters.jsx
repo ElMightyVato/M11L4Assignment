@@ -7,7 +7,9 @@ const BrowseCharacters = ({ characters }) => {
             <ul>
                 {characters.map((character) => (
                     <li key={character.id}>
-                        <Link to={`/character/${character.id}`}>{character.name}</Link>
+                        <Link to={`/character/${character.id}`}>
+                            {character.name}
+                        </Link>
                     </li>
                 ))}
             </ul>
